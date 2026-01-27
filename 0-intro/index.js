@@ -7,13 +7,3 @@ const generateRandomColor = () => {
 }
 
 console.log(generateRandomColor());
-
-const changeColorRandomly = (event) => {
-  event.target.style.backgroundColor = generateRandomColor();
-};
-
-const button = document.querySelector("#click-me");
-button.addEventListener('click', changeColorRandomly);
-
-const heading = document.querySelector("h1");
-heading.addEventListener('mouseover', changeColorRandomly);
